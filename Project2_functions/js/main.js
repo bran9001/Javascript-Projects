@@ -8,10 +8,11 @@ function updateElementText() {
 
 updateElementText()
 
-
+// Concatenates strings two variables assigned to strings
 function concatenateStrings() {
     var str1 = "Hello ";
     var str2 = "world!";
-    var result = str1 + str2;
+    var result = str1 += str2;
+    //Displays function result by calling HTML element
     document.getElementById("paragraph-element2").innerHTML = result;
 }
