@@ -36,7 +36,7 @@ function ifElseStatement() {
         document.getElementById("if-else-statement-data").innerHTML = "14 is not greater than 15"
     }
 }
-
+//Gets time based off new date 
 function Time_function() {
     var Time = new Date().getHours();
     var Reply;
