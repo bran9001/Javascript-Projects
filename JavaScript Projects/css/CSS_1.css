@@ -1,0 +1,42 @@
+/* Body Styling */
+body {
+    background-color: #232635 !important;
+}
+
+/*Contact Form Styling*/
+.txt {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    color: #6f7d95;
+    line-height: 1.6;
+  }
+.btn-txt {
+    background-color: #141721 !important;
+    color: #6f7d95 !important;
+}
+input:focus {
+    background-color: #2f303d !important;
+    
+}
+
+.contact {
+    
+}
+
+.form-control {
+    background-color: #141721 !important;
+    border: 1px solid #1c1f2c !important;
+    color: #6f7d95 !important;
+}
+
+.form-control:valid {
+    background-color: #141721 !important;
+    border: 1px solid #1c1f2c !important;
+}
+
+.form-control:focus {
+    border-color: #6f7d95 !important;
+    box-shadow: none !important;
+    caret-color: #6f7d95 !important;
+} 

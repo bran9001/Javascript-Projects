@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./css/CSS_1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="contact col-12 d-flex justify-content-center " id="contact">
+        <form class="row needs-validation" novalidate>
+          <div class="mb-3">
+            <label for="exampleInputName" class="form-label txt">Name</label>
+            <input type="name" class="form-control" id="exampleInputName" required>
+            <div class="invalid-feedback">
+              Invalid name
+            </div>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label txt">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>\
+            <div id="emailHelp" class="txt">We'll never share your email with anyone else.</div>
+            <div class="invalid-feedback">
+              Invalid email address
+            </div>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputMessage" class="form-label txt">Message</label>
+            <input type="name" class="form-control" id="exampleInputMessage" required>
+          </div>
+          <button type="submit" class="btn btn-txt txt">Submit</button>
+        </form>
+      </div>
+
+      <script src="./js/JavaScript_Form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
