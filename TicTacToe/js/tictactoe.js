@@ -51,7 +51,7 @@ function placeXOrO(squareNumber) {
         //This condition allows our while loop to keep trying if a square is selected already.
         while (!success) {
             //A random number between 0 and 8 is selected.
-            PickASquare = string(Math.floor(Math.random() * 9));
+            pickASquare = String(Math.floor(Math.random() * 9));
             //If the random number evaulted returns true, the square hasn't been selected yet.
             if (placeXOrO(pickASquare)) {
                 //This line calls the function.
@@ -118,7 +118,7 @@ function checkWinConditions() {
     }
 }
 //This function makes our body element temporarily unclickable.
-function disableclick() {
+function disableClick() {
     //This makes our body unclickable.
     body.style.pointerEvents = 'none';
     //This makes our body clickable again after 1 second.
@@ -182,7 +182,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
         //This is necessary for the 6, 4, 2 win condition.
         if (x1 <= x2 && y1 >= y2) {
             if (x < x2) { x += 10; }
-            if (y < y2) { y -= 10; }
+            if (y > y2) { y -= 10; }
             if (x >= x2 && y <= y2) { cancelAnimationFrame(animationLoop); }
         }
     }
@@ -196,7 +196,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
         cancelAnimationFrame(animationLoop);
     }
     //This line disallows clicking while the win sound is playing
-    disableclick();
+    disableClick();
     //this line plays the win sounds
     audio('./media/winGame.mp3');
     //This line calls our main animation loop.
